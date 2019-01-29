@@ -17,7 +17,7 @@
 ### 스코어보드 API
 먼저 [쿠키 스코어보드](https://www.cookiee.net/gmscore)에서 토큰과 시크릿을 발급받습니다.
 
-발급받은 토큰과 시크릿으로 Scoreboard 객체를 생성합니다.
+발급받은 토큰과 시크릿으로 `Scoreboard` 객체를 생성합니다.
 ```c#
 var board = CookieeClient.CreateScoreboard(TOKEN, SECRET);
 ```
@@ -42,7 +42,7 @@ var result5 = await board.GetAsync(5);
 ### 로그인 API
 먼저 [쿠키 게임 관리](https://www.cookiee.net/gmdata)에서 토큰을 발급받습니다.
 
-발급받은 토큰으로 Login 객체를 생성합니다.
+발급받은 토큰으로 `Login` 객체를 생성합니다.
 ```c#
 var login = CookieeClient.CreateLogin(TOKEN);
 ```
@@ -61,7 +61,7 @@ var result3 = login.SocialLogin();
 var result4 = await login.SocialLoginAsync();
 ```
 
-로그인을 성공했을 시 반환받는 유저 SRL을 통해 유저의 정보를 받아올 수 있습니다. 받아온 유저 정보에는 `유저 SRL, ID, 닉네임, 프로필 사진 경로`가 포함됩니다.
+로그인을 성공했을 시 반환받는 `유저 SRL`을 통해 유저의 정보를 받아올 수 있습니다. 받아온 유저 정보에는 `유저 SRL, ID, 닉네임, 프로필 사진 경로`가 포함됩니다.
 ```c#
 var user = login.GetUser(USERSRL);
 //비동기
@@ -71,7 +71,7 @@ var user2 = await login.GetUserAsync(USERSRL);
 ### 데이터 API
 먼저 [쿠키 게임 관리](https://www.cookiee.net/gmdata)에서 토큰과 시크릿을 발급받습니다.
 
-발급받은 토큰과 시크릿으로 GameData 객체를 생성합니다.
+발급받은 토큰과 시크릿으로 `GameData` 객체를 생성합니다.
 ```c#
 var data = CookieeClient.CreateGameData(TOKEN, SECRET);
 ```
