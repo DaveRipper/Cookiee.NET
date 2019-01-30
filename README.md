@@ -69,9 +69,46 @@ var user2 = await login.GetUserAsync(USERSRL);
 ```
 
 ### 데이터 API
-먼저 [쿠키 게임 관리](https://www.cookiee.net/gmdata)에서 토큰과 시크릿을 발급받습니다.
+먼저 [쿠키 게임 관리](https://www.cookiee.net/gmdata)에서 토큰과 시크릿을 발급받습니다. 로그인이 필요합니다.
 
 발급받은 토큰과 시크릿으로 `GameData` 객체를 생성합니다.
 ```c#
 var data = CookieeClient.CreateGameData(TOKEN, SECRET);
+```
+
+데이터 API를 사용하는 데에는 유저 SRL이 필요합니다. 데이터를 불러오는 방법은 다음과 같습니다.
+```c#
+var userData = data.Load(USERSRL);
+//비동기
+var userData2 = await data.LoadAsync(USERSRL);
+```
+
+불러온 데이터는 `Dictionary` 형태로 반환됩니다. 이 데이터를 원하는 대로 작업한 뒤에 저장해주어야 합니다.
+```c#
+var result = data.Save(USERSRL, userData);
+//비동기
+var result2 = await data.SaveAsync(USERSRL, userData2);
+```
+
+`Save`/`SaveAsync` 메서드는 데이터를 추가하는 용도가 아닙니다. 말 그대로 데이터를 저장하는 용도입니다. 만약 A라는 유저의 데이터가 `B, C`가 있었는데 `Save` 메서드로 `D, E`를 저장한다면 A의 데이터는 `B, C, D, E`가 아닌 `D, E`가 됩니다.
+
+하나의 데이터를 추가하고 싶을 때는 `Add` 메서드를 사용하면 됩니다. 이 메서드는 내부에서 `Save`와 `Load` 메서드를 호출합니다. 따라 성능 저하가 발생할 수 있을 수도 있습니다. (아직 확인 안 해봄)
+```c#
+var result3 = data.Add(USERSRL, KEY, VALUE);
+//비동기
+var result4 = await data.AddAsync(USERSRL, KEY, VALUE);
+```
+
+`Add` 메서드와 똑같은 구조지만 하나의 데이터를 삭제하는 용도인 `Delete` 메서드 또한 존재합니다.
+```c#
+var result5 = data.Delete(USERSRL, KEY);
+//비동기
+var result6 = await data.DeleteAsync(USERSRL, KEY);
+```
+
+`Add`, `Delete` 메서드는 다음 코드와 같은 기능을 합니다.
+```c#
+var userData = await data.LoadAsync(USERSRL);
+userData.Add(KEY, VALUE);
+var result = await data.SaveAsync(USERSRL, userData);
 ```
