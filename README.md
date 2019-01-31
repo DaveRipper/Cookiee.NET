@@ -8,7 +8,7 @@
 - 비동기 지원
 
 ## 설치
-[쿠키 마켓](https://www.cookiee.net/cookie_market)에서 500P로 구매할 수 있습니다.
+NuGet으로 설치할 수 있습니다. Cookiee.NET은 반드시 Newtonsoft.JSON이 설치되어 있어야 작동합니다.
 
 ## 사용
 
