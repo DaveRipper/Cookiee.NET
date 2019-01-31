@@ -1,0 +1,8 @@
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\bin\Release\netstandard2.0\Cookiee.NET.deps.json
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\bin\Release\netstandard2.0\Cookiee.NET.dll
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\bin\Release\netstandard2.0\Cookiee.NET.pdb
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\obj\Release\netstandard2.0\Cookiee.NET.csproj.CoreCompileInputs.cache
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\obj\Release\netstandard2.0\Cookiee.NET.AssemblyInfoInputs.cache
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\obj\Release\netstandard2.0\Cookiee.NET.AssemblyInfo.cs
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\obj\Release\netstandard2.0\Cookiee.NET.dll
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\obj\Release\netstandard2.0\Cookiee.NET.pdb
