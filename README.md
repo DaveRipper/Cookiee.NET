@@ -14,8 +14,12 @@ PM> Install-Package Cookiee.NET
 ```
 
 ## 사용
-
 설명에 앞서, 해당 글을 읽고 계신 분들은 [쿠키](https://www.cookiee.net/)에서 기본적인 강좌를 모두 한 번씩 읽고 오셨다고 가정하고 설명을 진행합니다.
+
+코드 상단에 다음 코드를 추가합니다.
+```c#
+using Cookiee;
+```
 
 ### 스코어보드 API
 먼저 [쿠키 스코어보드](https://www.cookiee.net/gmscore)에서 토큰과 시크릿을 발급받습니다.
@@ -115,3 +119,7 @@ var userData = await data.LoadAsync(USERSRL);
 userData.Add(KEY, VALUE);
 var result = await data.SaveAsync(USERSRL, userData);
 ```
+
+## 추후 지원 기능
+- 지원 프레임워크 확대 (현재 .Net Standard 2.0(= .Net Framework 4.6.1, .Net Core 2.0, Mono 5.4)만 지원)
+- 자동 업데이터
