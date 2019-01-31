@@ -8,7 +8,10 @@
 - 비동기 지원
 
 ## 설치
-NuGet으로 설치할 수 있습니다. Cookiee.NET은 반드시 Newtonsoft.JSON이 설치되어 있어야 작동합니다.
+[NuGet](https://www.nuget.org/packages/Cookiee.NET/)으로 설치할 수 있습니다. Cookiee.NET은 반드시 Newtonsoft.Json이 설치되어 있어야 작동합니다.
+```
+PM> Install-Package Cookiee.NET
+```
 
 ## 사용
 
