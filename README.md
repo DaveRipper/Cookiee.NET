@@ -9,7 +9,7 @@
 - .NET 4.5 / 4.6, .NET Standard 2.0 지원
 
 ## 설치
-[NuGet](https://www.nuget.org/packages/Cookiee.NET/)으로 설치할 수 있습니다. Cookiee.NET은 반드시 Newtonsoft.Json이 설치되어 있어야 작동합니다.
+[NuGet](https://www.nuget.org/packages/Cookiee.NET/)으로 설치할 수 있습니다. Cookiee.NET은 반드시 Newtonsoft.Json이 설치되어 있어야 작동합니다. Cookiee.NET을 설치하면 자동으로 Newtonsoft.Json도 설치됩니다.
 ```
 PM> Install-Package Cookiee.NET
 ```
