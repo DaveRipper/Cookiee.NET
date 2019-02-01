@@ -1,0 +1,10 @@
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\obj\Release\net46\Cookiee.NET.csprojAssemblyReference.cache
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\obj\Release\net46\Cookiee.NET.csproj.CoreCompileInputs.cache
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\obj\Release\net46\Cookiee.NET.AssemblyInfoInputs.cache
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\obj\Release\net46\Cookiee.NET.AssemblyInfo.cs
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\bin\Release\net46\Cookiee.NET.dll
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\bin\Release\net46\Cookiee.NET.pdb
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\bin\Release\net46\Newtonsoft.Json.dll
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\obj\Release\net46\Cookiee.NET.csproj.CopyComplete
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\obj\Release\net46\Cookiee.NET.dll
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\obj\Release\net46\Cookiee.NET.pdb

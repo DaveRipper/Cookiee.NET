@@ -11,7 +11,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 
-namespace Cookiee.NET
+namespace Cookiee
 {
     /// <summary>
     /// Cookiee의 예외 클래스입니다.

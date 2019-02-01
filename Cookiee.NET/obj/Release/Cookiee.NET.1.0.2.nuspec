@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Cookiee.NET</id>
+    <version>1.0.2</version>
+    <authors>DaveRipper</authors>
+    <owners>DaveRipper</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>C# Wrapper for Cookiee API</description>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Newtonsoft.Json" version="10.0.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6">
+        <dependency id="Newtonsoft.Json" version="10.0.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Newtonsoft.Json" version="10.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Net.Http" targetFramework=".NETFramework4.5, .NETFramework4.6" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\bin\Release\net45\Cookiee.NET.dll" target="lib\net45\Cookiee.NET.dll" />
+    <file src="F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\bin\Release\net46\Cookiee.NET.dll" target="lib\net46\Cookiee.NET.dll" />
+    <file src="F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\bin\Release\netstandard2.0\Cookiee.NET.dll" target="lib\netstandard2.0\Cookiee.NET.dll" />
+  </files>
+</package>

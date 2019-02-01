@@ -1,0 +1,4 @@
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\obj\Release\netstandard1.3\Cookiee.NET.csprojAssemblyReference.cache
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\obj\Release\netstandard1.3\Cookiee.NET.csproj.CoreCompileInputs.cache
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\obj\Release\netstandard1.3\Cookiee.NET.AssemblyInfoInputs.cache
+F:\Cookiee.NET\Cookiee.NET\Cookiee.NET\obj\Release\netstandard1.3\Cookiee.NET.AssemblyInfo.cs
