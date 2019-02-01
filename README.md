@@ -6,6 +6,7 @@
 - 일반 로그인 / 소셜 로그인
 - 게임 데이터 관리
 - 비동기 지원
+- .NET 4.5 / 4.6, .NET Standard 2.0 지원
 
 ## 설치
 [NuGet](https://www.nuget.org/packages/Cookiee.NET/)으로 설치할 수 있습니다. Cookiee.NET은 반드시 Newtonsoft.Json이 설치되어 있어야 작동합니다.
@@ -121,5 +122,4 @@ var result = await data.SaveAsync(USERSRL, userData);
 ```
 
 ## 추후 지원 기능
-- 지원 프레임워크 확대 (현재 .Net Standard 2.0(= .Net Framework 4.6.1, .Net Core 2.0, Mono 5.4)만 지원)
 - 자동 업데이터
