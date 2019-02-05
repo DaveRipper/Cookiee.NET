@@ -333,13 +333,24 @@ namespace Cookiee
         /// </summary>
         /// <param name="count">가져올 점수의 개수입니다.</param>
         /// <returns>가져온 점수를 배열로 반환합니다.</returns>
-        public JObject Get(int count)
+        public Score[] Get(int count)
         {
             var request = (HttpWebRequest)WebRequest.Create(scoreboardGetUrl + $"/{Token}&count={count}");
+            JArray result = null;
             using (var response = (HttpWebResponse)request.GetResponse())
             using (var stream = response.GetResponseStream())
             using (var reader = new StreamReader(stream))
-                return JObject.Parse(reader.ReadToEnd());
+                result = JArray.Parse(JObject.Parse(reader.ReadToEnd())["list"].ToString());
+
+            var scores = new Score[result.Count];
+            for (int i = 0; i < result.Count; i++)
+            {
+                var parsed = JObject.Parse(result[i].ToString());
+                scores[i] = new Score(int.Parse(parsed["rank"].ToString()), int.Parse(parsed["user_srl"].ToString()), parsed["name"].ToString(),
+                    Convert.ToInt64(parsed["score"].ToString()), DateTime.ParseExact(parsed["time"].ToString(), "yyyy-MM-dd HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture));
+            }
+
+            return scores;
         }
     }
 
