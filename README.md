@@ -10,7 +10,6 @@
 - 일반 로그인 / 소셜 로그인
 - 게임 데이터 관리
 - 비동기 지원
-- .NET 4.5 / 4.6, .NET Standard 2.0 지원
 
 ## 설치
 [NuGet](https://www.nuget.org/packages/Cookiee.NET/)으로 설치할 수 있습니다. Cookiee.NET은 반드시 Newtonsoft.Json이 설치되어 있어야 작동합니다. Cookiee.NET을 설치하면 자동으로 Newtonsoft.Json도 설치됩니다.
@@ -69,7 +68,12 @@ var result2 = await login.NormalLoginAsync("ID", "PW");
 ```
 
 소셜 로그인을 하는 방법은 다음과 같습니다. 비동기던 아니던, 꼭 브라우저 창을 열어야 합니다.
+
++ 190225) 다양한 플랫폼 대응을 위해 구조가 변경되었습니다. `GetSocialLoginUrl` 함수를 호출하면 소셜 로그인을 진행할 수 있는 주소가 반환됩니다. 플랫폼별 방식에 맞게 브라우저를 연 다음 `SocialLogin` 함수를 호출하면 됩니다.
 ```c#
+//PC에서 브라우저 열기
+System.Diagnostics.Process.Start(login.GetSocialLoginUrl());
+
 var result3 = login.SocialLogin();
 //비동기
 var result4 = await login.SocialLoginAsync();
