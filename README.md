@@ -73,6 +73,8 @@ var result2 = await login.NormalLoginAsync("ID", "PW");
 ```c#
 //PC에서 브라우저 열기
 System.Diagnostics.Process.Start(login.GetSocialLoginUrl());
+//유니티에서 브라우저 열기
+Application.OpenURL(login.GetSocialLoginUrl());
 
 var result3 = login.SocialLogin();
 //비동기
