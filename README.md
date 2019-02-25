@@ -14,6 +14,8 @@
 PM> Install-Package Cookiee.NET
 ```
 
+유니티의 경우 `Cookiee.NET.dll, Newtonsoft.Json.dll` 두 파일을 `Assets/Plugins` 폴더 안에 넣으면 됩니다.
+
 ## 사용
 설명에 앞서, 해당 글을 읽고 계신 분들은 [쿠키](https://www.cookiee.net/)에서 기본적인 강좌를 모두 한 번씩 읽고 오셨다고 가정하고 설명을 진행합니다.
 
